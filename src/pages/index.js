@@ -1,4 +1,5 @@
 import Error from "./Error";
 import HomePage from "./HomePage";
+import Capsules from "./Capsules";
 
-export{Error,HomePage}
+export{Error,HomePage,Capsules}

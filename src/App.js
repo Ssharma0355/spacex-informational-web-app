@@ -1,4 +1,4 @@
-import { Error, HomePage } from "./pages";
+import { Error, HomePage,Capsules } from "./pages";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import { Header } from "./components";
 function App() {
@@ -7,6 +7,7 @@ function App() {
 <Header/>
 <Routes>
   <Route path="/" element={<HomePage />}></Route>
+  <Route path="/capsule" element={<Capsules />}></Route>
   <Route path="*" element={<Error />}></Route>
 </Routes>
 </BrowserRouter> );
