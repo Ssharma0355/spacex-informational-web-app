@@ -30,7 +30,7 @@ function HomePage() {
               </h1>
               <div className="grid grid-cols gap-5 md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto mt-10 lg:gap-20">
                 <article>
-                  <h2 className="font-bold border-b-2 border-white text-xl mb-3">
+                  <h2 className="font-bold border-b-2 border-white text-xl mb-3 uppercase tracking-wider">
                     About
                   </h2>
                   <ul className="text-sm opacity-75">
@@ -45,7 +45,7 @@ function HomePage() {
                   </ul>
                 </article>
                 <article>
-                  <h2 className="font-bold border-b-2 border-white text-xl mb-3">
+                  <h2 className="font-bold border-b-2 border-white text-xl mb-3 uppercase tracking-wider">
                     Headquarter
                   </h2>
                   <ul className="text-sm opacity-75">
@@ -55,7 +55,7 @@ function HomePage() {
                   </ul>
                 </article>
                 <article>
-                  <h2 className="font-bold border-b-2 border-white text-xl mb-3">
+                  <h2 className="font-bold border-b-2 border-white text-xl mb-3 uppercase tracking-wider">
                     Useful Links
                   </h2>
                   <ul className="text-sm opacity-75">
