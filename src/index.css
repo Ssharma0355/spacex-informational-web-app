@@ -41,4 +41,12 @@ p{
   justify-content: center;
   align-items: center;
 }
+.max-width {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.articles{
+  @apply bg-stone-900 p-5 rounded-lg shadow shadow-zinc-900 text-white text-sm ;
+}
+
 

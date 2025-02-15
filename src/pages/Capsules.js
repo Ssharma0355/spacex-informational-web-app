@@ -15,7 +15,7 @@ function Capsules() {
     <>
       <section>
         <h1 className="heading text-center mb-5"> Capsules</h1>
-        <div>
+        <div className='max-width grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto px-5'>
           {capsules.map(
             ({
               id,
@@ -29,7 +29,7 @@ function Capsules() {
               reuse_count,
             }) => (
               <article key={id} className="articles">
-                <h2>
+                <h2 className='text-lg font-bold border-b-2 border-white mb-5 uppercase tracking-wider'>
                   {type},<span>{serial}</span>
                 </h2>
                 <ul>
