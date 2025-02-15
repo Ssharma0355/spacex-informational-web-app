@@ -5,10 +5,10 @@ import { SiSpacex } from "react-icons/si";
 function Header() {
   return (
     <>
-      <header>
+      <header className="flex items-center justify-between p-5 ">
         <div>
           <Link to="/">
-            <SiSpacex className="text-5xl text-white" />
+            <SiSpacex className="text-8xl text-white" />
           </Link>
         </div>
         <nav>
