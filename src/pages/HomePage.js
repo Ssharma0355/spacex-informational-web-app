@@ -28,7 +28,7 @@ function HomePage() {
               <h1 className="heading text-center capitalize">
                 All the SpaceX data in One Place
               </h1>
-              <div className="grid grid-cols gap-5 md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto mt-10 lg:gap-20">
+              <div className="grid grid-cols gap-5 md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto mt-10 lg:gap-20 px-5">
                 <article>
                   <h2 className="font-bold border-b-2 border-white text-xl mb-3 uppercase tracking-wider">
                     About
