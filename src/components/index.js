@@ -1,4 +1,5 @@
 import Header from "./Header";
+import LoadingState from "./LoadingState";
 
 
-export{Header}
+export{Header,LoadingState}
