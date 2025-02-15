@@ -34,14 +34,22 @@ function HomePage() {
                     About
                   </h2>
                   <ul className="text-sm opacity-75">
-                    <li>{company.name} was founded by</li>
-                    <li>{company.founder}in the year</li>
-                    <li>{company.founded}.</li>
-                    <li>It has {company.employees} employees,</li>
-                    <li>{company.vehicles} vehicles,</li>
-                    <li>{company.launch_sites} launch sites</li>
-                    <li> and {company.test_sites} test sites and </li>
-                    <li>is valued at {company.valuation.toLocaleString()} B</li>
+                    <li className="mb-1">{company.name} was founded by</li>
+                    <li className="mb-1">{company.founder}in the year</li>
+                    <li className="mb-1">{company.founded}.</li>
+                    <li className="mb-1">
+                      It has {company.employees} employees,
+                    </li>
+                    <li className="mb-1">{company.vehicles} vehicles,</li>
+                    <li className="mb-1">
+                      {company.launch_sites} launch sites
+                    </li>
+                    <li className="mb-1">
+                      and {company.test_sites} test sites and{" "}
+                    </li>
+                    <li className="mb-1">
+                      is valued at {company.valuation.toLocaleString()} B
+                    </li>
                   </ul>
                 </article>
                 <article>
@@ -49,9 +57,9 @@ function HomePage() {
                     Headquarter
                   </h2>
                   <ul className="text-sm opacity-75">
-                    <li>{company.headquarters?.address}</li>
-                    <li>{company.headquarters?.city}</li>
-                    <li>{company.headquarters?.state}</li>
+                    <li className="mb-1">{company.headquarters?.address}</li>
+                    <li className="mb-1">{company.headquarters?.city}</li>
+                    <li className="mb-1">{company.headquarters?.state}</li>
                   </ul>
                 </article>
                 <article>
@@ -59,16 +67,16 @@ function HomePage() {
                     Useful Links
                   </h2>
                   <ul className="text-sm opacity-75">
-                    <li>
+                    <li className="mb-1">
                       <a href={company.links?.website}>Website</a>
                     </li>
-                    <li>
+                    <li className="mb-1">
                       <a href={company.links?.flickr}>flickr</a>
                     </li>
-                    <li>
+                    <li className="mb-1">
                       <a href={company.links?.twitter}>twitter</a>
                     </li>
-                    <li>
+                    <li className="mb-1">
                       <a href={company.links?.elon_twitter}>elon_twitter</a>
                     </li>
                   </ul>
