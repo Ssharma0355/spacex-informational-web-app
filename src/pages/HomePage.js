@@ -28,7 +28,7 @@ function HomePage() {
               <h1 className="heading text-center capitalize">
                 All the SpaceX data in One Place
               </h1>
-            <div className="grid grid-cols gap-5 md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto">
+            <div className="grid grid-cols gap-5 md:grid-cols-2 lg:grid-cols-3 max-w-4xl mx-auto mt-10">
               <article>
                 <h2>About</h2>
                 <ul className="text-sm opacity-75">
@@ -68,7 +68,7 @@ function HomePage() {
                 </ul>
               </article>
             </div>
-            <p>{company.summary}</p>
+            <p className="max-w-3xl mx-auto text-center mt-10">{company.summary}</p>
              </article>
           </div>
         </section>
