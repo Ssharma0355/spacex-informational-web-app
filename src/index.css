@@ -31,6 +31,13 @@ p{
   @apply text-white text-sm;
 }
 .showcase{
-  background: url('./assets//bg-image.jpg') ;
-  height: 100vh;
+  background: url('./assets//bg-image.jpg') no-repeat center/cover ;
+  height: calc(100vh - 0.1px);
+}
+.showcase .overlay{
+  background: rgba(0, 0, 0, 0.3);
+  height: calc(100vh - 0.1px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
