@@ -26,3 +26,11 @@ code {
 .heading{
   @apply text-4xl font-bold text-white md:text-5xl xl:text-6xl;
 }
+p{
+  line-height: 1.8;
+  @apply text-white text-sm;
+}
+.showcase{
+  background: url('./assets//bg-image.jpg') ;
+  height: 100vh;
+}
