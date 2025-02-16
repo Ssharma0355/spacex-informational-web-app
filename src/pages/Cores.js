@@ -26,20 +26,22 @@ function Cores() {
               serial,
               launches,
             }) => (
-              <artile key={id}>
-                <h2>{serial}</h2>
+              <artile key={id} className="articles">
+                <h2 className="text-lg font-bold border-b-2 border-white mb-5 uppercase tracking-wider">
+                  {serial}
+                </h2>
                 <ul>
-                  <li> Reused {reuse_count} times</li>
-                  <li>{launches.length} launches</li>
-                  <li>{asds_landings} ASDS landings</li>
-                  <li>{rtls_landings} RTLS Landings</li>
+                  <li className="mb-1"> Reused {reuse_count} times</li>
+                  <li className="mb-1">{launches.length} launches</li>
+                  <li className="mb-1">{asds_landings} ASDS landings</li>
+                  <li className="mb-1">{rtls_landings} RTLS Landings</li>
                   {status === "active" ? (
                     <li className="text-emerald-500">Active</li>
                   ) : (
                     <li className="text-rose-500">{status}</li>
                   )}
                 </ul>
-                <p>{last_update}</p>
+                <p className="mt-5 opacity-75">{last_update}</p>
               </artile>
             )
           )}
