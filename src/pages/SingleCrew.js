@@ -33,9 +33,7 @@ function SingleCrew() {
                   Status {singleCrew.status}
                 </li>
               ) : (
-                <li className="text-rose-500 ">
-                  Status {singleCrew.status}
-                </li>
+                <li className="text-rose-500 ">Status {singleCrew.status}</li>
               )}
             </ul>
             <ul className="flex items-center justify-start mb-5 mt-5">
