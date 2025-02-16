@@ -56,21 +56,19 @@ p {
   @apply bg-stone-900 p-5 rounded-lg shadow shadow-zinc-900 text-white text-sm;
 }
 
-
 .spinner {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   min-height: 100vh;
-
 }
 
 .spinner article {
   width: 5rem;
   height: 5rem;
   background-color: transparent;
-  border: 2px solid #10b58128;
+  border: 4px solid rgba(16, 181, 129, 0.2);
   border-top-color: #10b581;
   border-radius: 50%;
   animation: spin 1s linear infinite;
