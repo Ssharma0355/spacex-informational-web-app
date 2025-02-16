@@ -1,5 +1,5 @@
 import Header from "./Header";
 import LoadingState from "./LoadingState";
+import AuthModal from "./AuthModal";
 
-
-export{Header,LoadingState}
+export { Header, LoadingState, AuthModal };

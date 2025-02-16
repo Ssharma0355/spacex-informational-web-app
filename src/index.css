@@ -1,7 +1,7 @@
-
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,7 +11,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   @apply bg-gradient-to-br from-stone-900 to-slate-800;
 }
-img{
+
+img {
   max-width: 100%;
   width: 100%;
 }
@@ -20,33 +21,63 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 .btn {
-  @apply py-2 px-8 bg-blue-500 text-white bg-transparent  border-blue-500 rounded hover:opacity-75 transition-all duration-300 ;
+  @apply py-2 px-8 bg-blue-500 text-white bg-transparent border-blue-500 rounded hover:opacity-75 transition-all duration-300;
 }
-.heading{
+
+.heading {
   @apply text-4xl font-bold text-white md:text-5xl xl:text-6xl;
 }
-p{
+
+p {
   line-height: 1.8;
   @apply text-white text-sm;
 }
-.showcase{
-  background: url('./assets//bg-image.jpg') no-repeat center/cover ;
+
+.showcase {
+  background: url('./assets//bg-image.jpg') no-repeat center/cover;
   height: calc(100vh - 0.1px);
 }
-.showcase .overlay{
+
+.showcase .overlay {
   background: rgba(0, 0, 0, 0.3);
   height: calc(100vh - 0.1px);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .max-width {
   @apply max-w-6xl mx-auto px-4;
 }
 
-.articles{
-  @apply bg-stone-900 p-5 rounded-lg shadow shadow-zinc-900 text-white text-sm ;
+.articles {
+  @apply bg-stone-900 p-5 rounded-lg shadow shadow-zinc-900 text-white text-sm;
 }
 
 
+.spinner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+
+}
+
+.spinner article {
+  width: 5rem;
+  height: 5rem;
+  background-color: transparent;
+  border: 2px solid #10b58128;
+  border-top-color: #10b581;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
