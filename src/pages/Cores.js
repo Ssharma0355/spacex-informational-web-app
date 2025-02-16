@@ -27,7 +27,19 @@ function Cores() {
               launches,
             }) => (
               <artile key={id}>
-                <h1>{serial}</h1>
+                <h2>{serial}</h2>
+                <ul>
+                  <li> Reused {reuse_count} times</li>
+                  <li>{launches.length} launches</li>
+                  <li>{asds_landings} ASDS landings</li>
+                  <li>{rtls_landings} RTLS Landings</li>
+                  {status === "active" ? (
+                    <li className="text-emerald-500">Active</li>
+                  ) : (
+                    <li className="text-rose-500">{status}</li>
+                  )}
+                </ul>
+                <p>{last_update}</p>
               </artile>
             )
           )}
