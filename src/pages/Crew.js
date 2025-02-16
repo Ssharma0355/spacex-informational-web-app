@@ -14,7 +14,25 @@ fetchCrew();
 },[])
 
   return (
-    <>{!crew ? <LoadingState /> : <section className="py-32"></section>}</>
+    <>
+      {!crew ? (
+        <LoadingState />
+      ) : (
+        <section className="py-32">
+          <h1 className="heading text-center mb-10"> Crew</h1>
+          <div className="max-width grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto px-5">
+        {crew.map(({id, name, image,})=>(
+            <article className='relative'>
+                <img className='h-96 w-full object-cover' src={image} alt={name} loading='lazy' />
+                <h2 className='absolute bottom-5 left-5 font-bold text-white text-lg tracking-wide '>{name}</h2>
+            </article>
+        ))}
+
+          </div>
+
+        </section>
+      )}
+    </>
   );
 }
 
