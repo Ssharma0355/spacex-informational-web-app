@@ -4,7 +4,7 @@ function LoadingState() {
   return (
     <div className="spinner">
       <article></article>
-      <p>Are Elon Musk's APIs fast? It's still loading.</p>
+      <p className='mt-6'>Are Elon Musk's APIs fast? It's still loading.</p>
     </div>
   );
 }
