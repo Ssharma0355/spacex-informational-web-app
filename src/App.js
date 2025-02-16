@@ -26,20 +26,18 @@ function App() {
         />
         <Route
           path="/capsule"
-          element={isAuthenticated ? <Capsules /> : <Navigate to="/" />}
+          element={isAuthenticated ? <Capsules /> : <Navigate to="/capsule" />}
         />
         <Route
           path="/cores"
-          element={isAuthenticated ? <Cores /> : <Navigate to="/" />}
+          element={isAuthenticated ? <Cores /> : <Navigate to="/cores" />}
         />
         <Route
           path="/crew"
-          element={isAuthenticated ? <Crew /> : <Navigate to="/" />}
+          element={isAuthenticated ? <Crew /> : <Navigate to="/crew" />}
         />
-        <Route
-          path="/crew/:id"
-          element={isAuthenticated ? <SingleCrew /> : <Navigate to="/" />}
-        />
+        <Route path="/crew/:id" element={<SingleCrew />} />
+
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
