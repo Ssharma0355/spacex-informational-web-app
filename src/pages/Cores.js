@@ -38,7 +38,7 @@ function Cores() {
                   {status === "active" ? (
                     <li className="text-emerald-500">Active</li>
                   ) : (
-                    <li className="text-rose-500">{status}</li>
+                    <li className="text-rose-500 capitalize">{status}</li>
                   )}
                 </ul>
                 <p className="mt-5 opacity-75">{last_update}</p>

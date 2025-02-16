@@ -33,7 +33,7 @@ function Capsules() {
                 reuse_count,
               }) => (
                 <article key={id} className="articles">
-                  <h2 className="text-lg font-bold border-b-2 border-white mb-5 uppercase tracking-wider">
+                  <h2 className="text-lg font-bold border-b-2 border-white mb-5 uppercase tracking-wider px-5">
                     {type},
                     <span className="text-base opacity-75 font-light">
                       {serial}
