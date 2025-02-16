@@ -1,5 +1,6 @@
 import { useState } from "react";
 // import video from "../assets/video.mp4";
+import gifBackground from "../assets/bg-login.png";
 import { SiSpacex } from "react-icons/si";
 
 function AuthModal({ setIsAuthenticated }) {
@@ -16,14 +17,19 @@ function AuthModal({ setIsAuthenticated }) {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-80">
-      <video
+      {/* <video
         autoPlay
         loop
         muted
         className="absolute inset-0 w-full h-full object-cover"
       >
-        {/* <source src={video} type="video/mp4" /> */}
-      </video>
+        <source src={video} type="video/mp4" />
+      </video> */}
+      <img
+        src={gifBackground}
+        alt="Background Animation"
+        className="absolute inset-0 w-full h-full object-cover"
+      />
       <div className="relative bg-gray-900 bg-opacity-50 p-8 rounded-lg shadow-lg text-white w-96 backdrop-blur-sm">
         <div className="flex items-center justify-start mb-4">
           <SiSpacex className="text-8xl text-white" />
