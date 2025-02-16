@@ -88,7 +88,7 @@ function Header({ setIsAuthenticated }) {
                     handleLogout();
                     setIsMenuOpen(false);
                   }}
-                  className="text-white text-sm bg-red-600 px-4 py-2 rounded hover:bg-red-700 w-full"
+                  className="text-white text-sm bg-blue-600 px-4 py-2 rounded hover:bg-red-700 w-full"
                 >
                   Logout
                 </button>
