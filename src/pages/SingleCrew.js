@@ -4,7 +4,7 @@ import { LoadingState } from "../components";
 
 function SingleCrew() {
   const [singleCrew, setSingleCrew] = useState({});
-  const [loading, setLoading] = useState(true); // Add loading state
+  const [loading, setLoading] = useState(true); 
   const { id } = useParams();
 
   useEffect(() => {

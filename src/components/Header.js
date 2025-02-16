@@ -43,6 +43,11 @@ function Header({ setIsAuthenticated }) {
               </Link>
             </li>
             <li>
+              <Link to="/dragons" className="text-white text-sm lg:text-base">
+                Dragons
+              </Link>
+            </li>
+            <li>
               <button
                 onClick={handleLogout}
                 className="text-white text-sm lg:text-base bg-black-600 px-4 rounded hover:bg-red-700"
@@ -80,6 +85,15 @@ function Header({ setIsAuthenticated }) {
                   onClick={() => setIsMenuOpen(false)}
                 >
                   Crew
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/dragons"
+                  className="text-white text-sm lg:text-base"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  Dragons
                 </Link>
               </li>
               <li>
