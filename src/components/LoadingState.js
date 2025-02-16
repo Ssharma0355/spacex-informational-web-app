@@ -4,7 +4,6 @@ function LoadingState() {
   return (
  <div className="spinner">
     <article>
-
     </article>
     <p>It's Loading</p>
  </div>

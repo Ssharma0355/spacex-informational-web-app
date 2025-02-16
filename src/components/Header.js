@@ -29,6 +29,11 @@ function Header({ setIsAuthenticated }) {
               </Link>
             </li>
             <li>
+              <Link to="/crew" className="text-white text-sm lg:text-base">
+                Crew
+              </Link>
+            </li>
+            <li>
               <button
                 onClick={handleLogout}
                 className="text-white text-sm lg:text-base bg-black-600 px-4 rounded hover:bg-red-700"

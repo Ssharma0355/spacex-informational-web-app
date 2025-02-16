@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Error, HomePage, Capsules, Cores } from "./pages";
+import { Error, HomePage, Capsules, Cores, Crew } from "./pages";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { Header, AuthModal } from "./components";
 
@@ -31,6 +31,10 @@ function App() {
         <Route
           path="/cores"
           element={isAuthenticated ? <Cores /> : <Navigate to="/" />}
+        />
+        <Route
+          path="/crew"
+          element={isAuthenticated ? <Crew /> : <Navigate to="/" />}
         />
         <Route path="*" element={<Error />} />
       </Routes>
