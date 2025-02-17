@@ -35,8 +35,7 @@ function Dragons() {
           {dragons.map(({ id, name, flickr_images, description }) => (
             <Link key={id} to={`/dragons/${id}`}>
               {" "}
-              {/* Added key prop to Link */}
-              <article className="relative">
+              <article className="relative background-color-black-700">
                 <img
                   className="h-100 w-full object-cover"
                   src={flickr_images}
