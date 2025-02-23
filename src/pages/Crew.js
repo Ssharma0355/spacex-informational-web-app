@@ -40,9 +40,9 @@ function Crew() {
                 alt={name}
                 loading="lazy"
               />
-              <h2 className="absolute bottom-5 left-5 font-bold text-white text-lg tracking-wide ">
-                {name}
-              </h2>
+                <h2 className="absolute bottom-5 left-5 font-bold text-white text-lg tracking-wide opacity-80 ">
+                  {name}
+                </h2>
             </article>
           </Link>
         ))}

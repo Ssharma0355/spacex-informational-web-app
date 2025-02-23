@@ -30,7 +30,7 @@ function AuthModal({ setIsAuthenticated }) {
         alt="Background Animation"
         className="absolute inset-0 w-full h-full object-cover"
       />
-      <div className="relative bg-gray-900 bg-opacity-50 p-8 rounded-lg shadow-lg text-white w-96 backdrop-blur-sm">
+      <div className="relative bg-gray-900 bg-opacity-40 p-8 rounded-lg shadow-lg text-white w-96 backdrop-blur-sm">
         <div className="flex items-center justify-start mb-4">
           <SiSpacex className="text-8xl text-white" />
           <h1 className="font-bold uppercase">Welcome to SpaceX</h1>
