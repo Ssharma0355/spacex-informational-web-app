@@ -31,21 +31,28 @@ function Dragons() {
     <>
       <section className="py-32">
         <h1 className="heading text-center mb-10">Dragons</h1>
-        <div className="max-width grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-4xl mx-auto px-5">
+
+        <div className="max-width grid grid-cols-1 gap-5 md:grid-cols-2 px-5">
           {dragons.map(({ id, name, flickr_images, description }) => (
-            <Link key={id} to={`/dragons/${id}`}>
-              {" "}
-              <article className="relative background-color-black-700">
+            <Link to={`/dragons/${id}`} key={id}>
+              <article>
                 <img
-                  className="h-100 w-full object-cover"
-                  src={flickr_images}
+                  src={flickr_images[0]}
                   alt={name}
-                  loading="lazy"
+                  className="h-96 object-cover"
                 />
-                <h2 className="absolute bottom-5 left-5 font-bold text-white text-lg tracking-wide ">
-                  {name}
-                </h2>
-                <p>{description}</p>
+                <div className="bg-zinc-900 p-5">
+                  <h2 className="text-white text-lg mb-3 font-bold tracking-wide">
+                    {name}
+                  </h2>
+                  <p className="text-white opacity-75 mb-8">{`${description.substring(
+                    0,
+                    200
+                  )}...`}</p>
+                  <Link to={`/dragons/${id}`} className="btn">
+                    Read More &rarr;
+                  </Link>
+                </div>
               </article>
             </Link>
           ))}
